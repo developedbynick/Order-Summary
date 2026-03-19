@@ -1,0 +1,168 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Chillax", sans-serif;
+}
+#bottom-warp,
+#top-warp {
+	width: 100%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	z-index: -10;
+}
+
+#bottom-warp {
+	transform: rotate(180deg);
+	bottom: 0;
+	top: auto;
+}
+
+#top-warp {
+	top: 0;
+	bottom: auto;
+}
+html {
+	height: 100%;
+}
+button {
+	outline: none;
+	border: none;
+	cursor: pointer !important;
+}
+
+div {
+	z-index: 10;
+}
+body {
+	display: flex;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	overflow: hidden;
+}
+
+#order-container .container {
+	background: white;
+	max-width: 400px;
+	box-shadow: 30px 20px 60px rgba(0, 0, 0, 0.3);
+	border-radius: 15px;
+	overflow: hidden;
+}
+.visual {
+	background: url("./images/illustration-hero.svg");
+	height: 200px;
+	background-position: center;
+	background-size: cover;
+}
+.text {
+	padding: 10px 40px;
+	text-align: center;
+	color: #2f3044;
+}
+.text h1 {
+	margin: 10px 0;
+}
+.text p {
+	color: rgba(0, 0, 0, 0.7);
+	line-height: 2;
+}
+#plan {
+	background-color: rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+	width: 90%;
+	margin: 20px auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5px 10px;
+	img {
+		margin: 0 10px;
+	}
+	div {
+		display: flex;
+		align-items: center;
+		div {
+			display: flex;
+			flex-direction: column;
+			padding: 0px;
+		}
+	}
+}
+
+#plan-details {
+	background-color: rgba(0, 0, 0, 0.05);
+	display: flex;
+	justify-content: space-between;
+	border-radius: 5px;
+	padding: 10px;
+	margin: 20px 0px;
+}
+#first-half {
+	display: flex;
+	img {
+		display: block;
+		margin: 0 5px 0px 0px;
+	}
+	h2 {
+		font-size: 1rem;
+	}
+}
+.plan-change {
+	color: rgb(56 44 229);
+	background: none;
+	border: none;
+	outline: none;
+	font-weight: 600;
+	text-decoration: underline;
+	font-size: 0.9rem;
+}
+
+#half-text p {
+	line-height: 1.4;
+}
+
+.proceed {
+	background-color: rgb(56, 44, 299);
+	width: 100%;
+	padding: 20px;
+	color: white;
+	font-size: 0.9rem;
+	border-radius: 10px;
+	font-weight: 800;
+	cursor: pointer;
+	margin: 10px 0;
+	transition: 0.2s ease-in;
+	transition-property: box-shadow, transform;
+}
+.proceed:hover {
+	box-shadow: 5px 5px 80px rgba(56, 44, 299, 0.3);
+	transform: translateY(-3px);
+}
+
+.cancel {
+	font-weight: 500;
+	color: rgba(52, 52, 52, 0.5);
+	font-size: 1rem;
+	background-color: transparent;
+	margin: 10px 0px;
+	cursor: pointer;
+	transition: color 0.3s ease-in;
+}
+.cancel:hover {
+	color: rgba(52, 52, 52, 1);
+}
+.attribution {
+	margin: 30px 0px;
+}
+
+.plan-change {
+	transition: all;
+}
+.plan-change:hover {
+	text-decoration: none;
+}
